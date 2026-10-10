@@ -6,22 +6,22 @@ Detailed rationale for each item is in `common_requirements.md`,
 
 ## 1. Repository and Process
 
-- [ ] The work is pushed to a **single** GitHub repository accessible to
+- [done] The work is pushed to a **single** GitHub repository accessible to
       the instructor (not separate repositories per lab assignment).
-- [ ] The repository has top-level folders `lab1`, `lab2`, `lab3`, `lab4`
+- [done] The repository has top-level folders `lab1`, `lab2`, `lab3`, `lab4`
       — one per lab assignment.
-- [ ] The repository has no files unrelated to the source code (build
+- [done] The repository has no files unrelated to the source code (build
       artifacts, IDE files, temporary files) — a `.gitignore` is in place.
-- [ ] Work happened in separate feature branches; changes reached `main`
+- [done] Work happened in separate feature branches; changes reached `main`
       only through a Pull Request approved by the instructor.
-- [ ] Commit messages are meaningful (not `commit 1`, `fix`, `wip`, `asdf`,
+- [done] Commit messages are meaningful (not `commit 1`, `fix`, `wip`, `asdf`,
       or the like) and explain what was changed and why.
 
 ## 2. Testing and Build
 
-- [ ] Unit tests exist with **over 90%** coverage.
-- [ ] Tests run from the console, not tied to a specific IDE.
-- [ ] The project builds from the console, without using an IDE.
+- [done] Unit tests exist with **over 90%** coverage.
+- [done] Tests run from the console, not tied to a specific IDE.
+- [done] The project builds from the console, without using an IDE.
 - [ ] A CI/CD pipeline is set up on GitHub that automatically:
   - [ ] runs the tests and checks code coverage;
   - [ ] checks code quality (static analysis / linting);
@@ -31,43 +31,43 @@ Detailed rationale for each item is in `common_requirements.md`,
 
 ## 3. CLI Interface
 
-- [ ] A console interface (CLI/menu) exists that demonstrates the domain's
+- [done] A console interface (CLI/menu) exists that demonstrates the domain's
       meaningful functionality (not just running the tests) — e.g., adding/
       removing an employee, shipping a package, generating a report, etc.
-- [ ] The CLI is separated from the domain implementation.
+- [done] The CLI is separated from the domain implementation.
 
 ## 4. Code Quality (Common Mistakes)
 
-- [ ] No magic numbers or hardcoded values (extracted into constants or a
+- [done] No magic numbers or hardcoded values (extracted into constants or a
       config).
-- [ ] No overcomplicated constructs or unnecessary abstractions.
-- [ ] Loop/`if-else` nesting does not exceed 3 levels within a single
+- [done] No overcomplicated constructs or unnecessary abstractions.
+- [done] Loop/`if-else` nesting does not exceed 3 levels within a single
       method.
 - [ ] Methods/functions are no longer than ~20 lines.
-- [ ] Lines of code are no longer than ~150 characters.
-- [ ] Variable, function, and class names are informative (no `temp`, `k`,
+- [done] Lines of code are no longer than ~150 characters.
+- [done] Variable, function, and class names are informative (no `temp`, `k`,
       `p`, `buffer`, `help`, etc.).
-- [ ] Naming and formatting style is consistent throughout the project.
-- [ ] No commented-out or dead code, no `TODO`s in the final version.
-- [ ] No long chained calls without intermediate variables.
+- [done] Naming and formatting style is consistent throughout the project.
+- [done] No commented-out or dead code, no `TODO`s in the final version.
+- [done] No long chained calls without intermediate variables.
 
 ## 5. Requirements Specific to Each Lab
 
 ### Lab 1 (OOP fundamentals: a class)
 
-- [ ] The chosen assignment variant is fully implemented.
-- [ ] Documentation is generated with the language's standard generator
+- [done] The chosen assignment variant is fully implemented.
+- [done] Documentation is generated with the language's standard generator
       (Doxygen / Javadoc / XML docs+DocFX / Sphinx-pdoc).
-- [ ] A console program with a menu exists to test the class.
-- [ ] The class is encapsulated; the console UI is separated from the
+- [done] A console program with a menu exists to test the class.
+- [done] The class is encapsulated; the console UI is separated from the
       class implementation.
-- [ ] Implemented where relevant: copy constructor and copy assignment,
+- [done] Implemented where relevant: copy constructor and copy assignment,
       correct resource cleanup, equality comparison, reading/writing the
       object to/from a text stream.
-- [ ] The class and the UI that uses it are mutually independent; the
+- [done] The class and the UI that uses it are mutually independent; the
       declaration is separated from the implementation using the
       language's own means.
-- [ ] If the language is not C++ — the C++-specific constructs (operator
+- [done] If the language is not C++ — the C++-specific constructs (operator
       overloading, `.h`/`.cpp`) are correctly carried over to the chosen
       language's means (see the correspondence table in `lab1.md`).
 
